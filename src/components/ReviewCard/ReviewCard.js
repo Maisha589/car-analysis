@@ -8,7 +8,7 @@ const ReviewCard = (props) => {
             <img className='h-80 w-80 p-3 m-5 align-center' src={img} alt="" />
             <p className='text-3xl font-semibold'>{name}</p>
             <p className='text-1xl text-red-900 m-5 p-3'>{review}</p>
-            <p>{rating}</p>
+            <p className='font-semibold'>Rating: <span className='font-bold text-red-800'>{rating}</span></p>
         </div>
     );
 };

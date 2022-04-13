@@ -2,6 +2,7 @@ import React from 'react';
 import useReviews from '../../useReview/useReview';
 import ReviewCard from '../ReviewCard/ReviewCard';
 import img from './red-mini-coupe-driving-highway.jpg';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     const [reviews, setReviews] = useReviews();
@@ -32,7 +33,9 @@ const Home = () => {
                     ></ReviewCard>)
                 }
             </div>
-            <button className='mt-5 py-2 px-4 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none  focus:ring-2 focus:ring-red-400 focus:ring-opacity-75 mb-5'>See all Reviews</button>
+            <Link to="/review" className='mr-10 hover:text-red-800'>
+                <button className='mt-10 py-2 px-4 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none  focus:ring-2 focus:ring-red-400 focus:ring-opacity-75 mt-3 mb-10'>View more</button>
+            </Link>
         </div>
     );
 };
