@@ -1,9 +1,20 @@
 import React from 'react';
+import useReviews from '../../useReview/useReview';
+import ReviewCard from '../ReviewCard/ReviewCard';
 
 const Review = () => {
+    const [reviews, setReviews] = useReviews();
+
+    // console.log(reviews);
+
     return (
-        <div>
-            <h2>This is review.</h2>
+        <div className='grid grid-cols-3 bg-slate-200'>
+            {
+                reviews.map(review => <ReviewCard
+                    key={review.id}
+                    review={review}
+                ></ReviewCard>)
+            }
         </div>
     );
 };

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "img": "./reviewer-1.png",
+        "name": "Mr.Sheldon Smith",
+        "review": "I fall in love with this red beast. Super smooth to drive.",
+        "rating": "5/5"
+    },
+    {
+        "id": 2,
+        "img": "./reviewer-2.png",
+        "name": "Selly Roy",
+        "review": "Every part of this car is perfect. The color is mesmerizing. Every ride is enjoyable",
+        "rating": "5/5"
+    },
+    {
+        "id": 3,
+        "img": "./reviewer-3.png",
+        "name": "Emy Felangi",
+        "review": "Super smooth to control. So expensive. Other experience is good. ",
+        "rating": "4/5"
+    },
+    {
+        "id": 4,
+        "img": "./reviewer-4.png",
+        "name": "Rachel Green",
+        "review": "Overall experience is awesome. Super smooth to control.",
+        "rating": "4.5/5"
+    },
+    {
+        "id": 5,
+        "img": "./reviewer-5.png",
+        "name": "joey Tribiyani",
+        "review": "My new love. A best vehicle for any family.",
+        "rating": "5/5"
+    },
+    {
+        "id": 6,
+        "img": "./reviewer-6.png",
+        "name": "Corey",
+        "review": "The best car i have drive in my life. ",
+        "rating": "5/5"
+    }
+]
