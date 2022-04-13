@@ -5,9 +5,7 @@ import img from './red-mini-coupe-driving-highway.jpg';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-    const [reviews, setReviews] = useReviews();
-
-    console.log(reviews);
+    const [reviews] = useReviews();
 
 
     return (
@@ -34,7 +32,7 @@ const Home = () => {
                 }
             </div>
             <Link to="/review" className='mr-10 hover:text-red-800'>
-                <button className='mt-10 py-2 px-4 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none  focus:ring-2 focus:ring-red-400 focus:ring-opacity-75 mt-3 mb-10'>View more</button>
+                <button className='mt-10 py-2 px-4 bg-red-500 text-white font-semibold rounded-lg shadow-md hover:bg-red-700 focus:outline-none  focus:ring-2 focus:ring-red-400 focus:ring-opacity-75 mb-10'>View more</button>
             </Link>
         </div>
     );
