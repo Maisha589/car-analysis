@@ -8,13 +8,18 @@ const Review = () => {
     // console.log(reviews);
 
     return (
-        <div className='grid grid-cols-3 bg-slate-200'>
-            {
-                reviews.map(review => <ReviewCard
-                    key={review.id}
-                    review={review}
-                ></ReviewCard>)
-            }
+        <div className='bg-slate-200'>
+            <div>
+                <h2 className='text-4xl mb-3 p-5'>Our beloved customer <span className='font-bold text-red-900 '>Review</span></h2>
+            </div>
+            <div className='grid grid-cols-3 '>
+                {
+                    reviews.map(review => <ReviewCard
+                        key={review.id}
+                        review={review}
+                    ></ReviewCard>)
+                }
+            </div>
         </div>
     );
 };
